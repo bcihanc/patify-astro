@@ -1,5 +1,6 @@
 ---
 import '../styles/main.css'
+import Navigation from "../components/Navigation.astro";
 
 const heading = "Patipark";
 const subheading = "Patililerin buluşma noktası";
@@ -36,6 +37,11 @@ const favicon = "/images/favicon.svg"
 </head>
 <body>
 <div class="container">
+    <header>
+        <nav>
+            <Navigation />
+        </nav>
+    </header>
     <main>
         <div class="text-container">
             <img src={appIcon} class="app-icon">
